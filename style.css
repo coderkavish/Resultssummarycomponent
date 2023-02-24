@@ -1,0 +1,221 @@
+:root{
+    --Light_red: hsl(0, 100%, 67%);
+    --Orangey_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+    /* background  */
+    --Light_slate_blue: hsl(252, 100%, 67%);
+    --Light_royal_blue: hsl(241, 81%, 54%);
+/* circle  */
+    --Violet_blue: hsla(256, 72%, 46%, 1);
+    --Persian_blue : hsl(241, 72%, 46%);
+    --White: hsl(0, 0%, 100%)
+    --Pale_blue: hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    background-color: white;
+    height: 390px;
+    width: 600px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    /* border: black 2px solid; */
+    -webkit-box-shadow: 6px 14px 44px -15px rgba(0,0,0,0.64);
+-moz-box-shadow: 6px 14px 44px -15px rgba(0,0,0,0.64);
+box-shadow: 6px 14px 44px -15px rgba(0,0,0,0.64);
+}
+
+.leftside{
+    background: linear-gradient(to bottom, var(--Light_slate_blue),var(--Light_royal_blue));
+    width: 50%;
+    border-radius: 30px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    padding: 25px;
+}
+
+.leftside h3{
+    color: var(--Light_lavender);
+    font-size: 22px;
+    font-weight: 200;
+}
+
+
+.leftside .circle{
+    height: 30px;
+    width: 50px;
+    background: linear-gradient(to bottom, var(--Violet_blue),rgba(37, 33, 201, 0) 100%);
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-left: 38px;
+    margin-top: 30px;
+}
+
+.circle h1
+{
+    color: white;
+    font-size: 60px;
+    padding-top: 40px;
+}
+
+.circle p{
+    color: white;
+    font-size: 18px;
+    color: rgb(140, 140, 140);
+}
+
+.wrapper h2{
+    color: white;
+    font-size: 32px;
+    padding-top: 20px;
+}
+
+.wrapper p{
+    color: white;
+    font-size: 17px;
+    color: rgba(167, 165, 165, 0.78);
+    padding-top: 5px;
+    
+}
+.rightside{
+  text-align: center;
+}
+.rightside h3{
+color: var(--Dark_gray_blue);
+font-size: 24px;
+padding-right: 70px;
+padding-top: 30px;
+}
+.rows{
+    text-align: center;
+padding-left: 35px;
+}
+
+.rows div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 7px;
+    padding-left: 15px;
+    
+}
+
+.Reaction {
+    width: 220px;
+    height: 50px;
+    background-color: hsla(0, 100%, 67%,10%);
+    
+}
+
+.memory{
+    width: 220px;
+    height: 50px;
+    background-color: hsla(39, 100%, 56%,10%);
+    
+}
+
+
+.verbal{
+    width: 220px;
+    height: 50px;
+    background-color: hsla(166, 100%, 37%,10%);
+}
+
+.visual{
+    width: 220px;
+    height: 50px;
+    background-color: hsla(234, 85%, 45%,10%);
+    margin-bottom: 25px;
+}
+
+.Reaction h4{
+color: var(--Light_red);
+padding-left: 15px;
+margin-right: 38px;
+}
+.memory h4{
+    color: hsl(39, 100%, 56%);
+    padding-left: 15px;
+    margin-right: 38px;
+}
+.verbal h4{
+    color: hsl(166, 100%, 37%);
+    padding-left: 15px;
+    margin-right: 50px;
+}
+.visual h4{
+   color: hsl(234, 85%, 45%);
+   padding-left: 15px;
+   margin-right: 50px;
+}
+
+p b{
+    color: var(--Dark_gray_blue);
+    font-size: 19px;
+}
+
+.btn{
+
+    height: 48px;
+    width: 220px;
+    background-color: var(--Dark_gray_blue);
+    color: white;
+    border: none;
+font-size: 15px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom, var(--Light_slate_blue), var(--Light_royal_blue));
+}
+.wrapper .container{
+    display: flex;
+    width: 100% ;
+
+}
+
+@media screen and (max-width:650px) {
+    body{
+        align-items: flex-start;
+        background-color: white;
+    }
+
+    .wrapper{
+        margin-top: 10px;
+        height: 800px;
+        width: 300px;
+    }
+    .wrapper .leftside{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        margin-right: 40px;
+        width: 190px;
+        height: 45px;
+    }
+}
